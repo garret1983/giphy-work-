@@ -1,6 +1,4 @@
 
-
-
 var random = ["randomGif"];
 
 
@@ -25,12 +23,12 @@ $("#add-random").on(".searchTerms", function () {
     random.push(newRandom);
 
     renderButtons();
-    //console.log(newRandom)
+    console.log(newRandom)
 });
 
 
 
-$("body").on("click", "btn", function () {
+$("body").on("click", ".btn", function () {
     var search = $(this).attr("randomGif"); //might be problem 
     console.log($(this).attr("randomGif"));//might be problem 
     var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=4CDx7xbKWsPIV73Lc0j0ATCZhQPbML25&tag=funny&rating=G";
