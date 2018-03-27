@@ -19,35 +19,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/app.js"> 
-
-        $("#gifButton").on("click"), function () {
-
-
-            $.ajax({
-                url: queryuRL,
-                method: "GET"
-            })
-
-                .then(function (response) {
-
-                    var imageURL = respone.data.image_original_url;
-
-                    var randomImage = $("<img>");
-
-                    randomImage.attr("src", imageURL);
-
-                    randomImage.attr("alt", "random image");
-
-
-                    $("images").prepend(randomImage);
-
-
-
-
-                });
-        };
-    </script>
+    <script type="text/javascript" src="assets/app.js"></script>
 
 
 
